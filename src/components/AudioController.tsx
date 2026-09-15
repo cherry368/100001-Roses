@@ -4,6 +4,10 @@ interface Props {
   visible: boolean;
 }
 
+const MUSIC_PATH =
+  `${import.meta.env.BASE_URL}assets/audio/birthday-music.mp3`;
+
+export function AudioController({ visible }: Props) {
 /**
  * Plays the real birthday-music.mp3 from public/assets/audio/.
  *
@@ -17,9 +21,9 @@ interface Props {
  * an older cached audio response.
  */
 
-const MUSIC_PATH = "/assets/audio/birthday-music.mp3";
+const MUSIC_PATH = `${import.meta.env.BASE_URL}assets/audio/birthday-music.mp3`;
 
-export function AudioController({ visible }: Props) {
+
   const [enabled, setEnabled] = useState(false);
   const [showPrompt, setShowPrompt] = useState(false);
 

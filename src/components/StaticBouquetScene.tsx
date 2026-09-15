@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+const ASSET_BASE = import.meta.env.BASE_URL;
 
 interface StaticBouquetSceneProps {
   phase: "reveal" | "explore";
@@ -164,16 +165,19 @@ export function StaticBouquetScene({
       aria-label="100,001 Roses"
     >
       <div className="page3__backdrop" aria-hidden="true">
-        <img src="/assets/bouquet/bouquet-wide.jpg" alt="" />
+        <img
+  src={`${ASSET_BASE}assets/bouquet/bouquet-wide.jpg`}
+  alt=""
+/>
       </div>
 
       <div className="page3__art" aria-hidden="true">
         <img
-          className="page3__image"
-          src="/assets/bouquet/bouquet-wide.jpg"
-          alt=""
-          draggable={false}
-        />
+  className="page3__image"
+  src={`${ASSET_BASE}assets/bouquet/bouquet-wide.jpg`}
+  alt=""
+  draggable={false}
+/>
       </div>
 
       <div className="page3__shade" aria-hidden="true" />
