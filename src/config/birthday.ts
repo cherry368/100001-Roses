@@ -4,7 +4,7 @@
 // ═══════════════════════════════════════════════════════════
 
 export const config = {
-  recipientName: "Ananya!",
+  recipientName: "Nature!",
   senderName: "Your slightly crazy friend",
   roseCount: 100001,
 
