@@ -2,7 +2,7 @@
 // RECIPIENT CONFIGURATION
 // ============================================================
 
-export const RECIPIENT_NAME = "Ananya";
+export const RECIPIENT_NAME = "Dear Nature !";
 
 // ------------------------------------------------------------
 // Reusable greetings
